@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../pictures/Employee_manegment.png'); /* Replace 'background.jpg' with your image file */
+    background-size: cover;
+    background-position: 0px -60px; 
+    background-repeat: no-repeat;
+}
+
+.EmployeesLinks {
+    width: 34%;
+    margin-top: 50px;
+    margin-left: 413px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.loginHeader {
+    background-color: rgb(223 206 253);
+    color: #450f60;
+    padding: 11px 9px;
+    margin-bottom: -15px;
+    width: 360px;
+    border-radius: 10px;
+}
+    .loginHeader h1 {
+        font-size: 32px;
+        margin: 0;
+        width: 360px;
+    }
+.loginHeader p {
+    font-size: 40px;
+    margin: 0;
+}
+
+.EmployeesLinks h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.EmployeesLinks ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.EmployeesLinks li {
+    margin-bottom: 19px;
+    width: 444px;
+}
+
+
+.EmployeesLinks a {
+    display: block;
+    padding: 13px 20px;
+    background-color: rgb(165 122 187);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.EmployeesLinks a:hover {
+    background-color: rgb(66, 26, 103);
+}

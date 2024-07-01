@@ -1,0 +1,55 @@
+﻿/* General styles */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 30px 5px;
+    font-family: Arial, sans-serif;
+    text-align:center;
+}
+
+/* Return button styles */
+.returnButton {
+    position: absolute;
+    top: 120px;
+    left: 24px;
+    padding: 7px 11px;
+    background-color: rgb(102, 32, 137);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 17px;
+    width: 36px;
+}
+
+    .returnButton:hover {
+        background-color: rgb(66, 26, 103);
+    }
+.clickButton {
+    display: block;
+    background-color: rgb(102, 32, 137);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    margin-left: 540px;
+}
+
+    .clickButton:hover {
+        background-color: rgb(66, 26, 103);
+    }
+
+#msg {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(102, 32, 137);
+}
+/* Form styles */

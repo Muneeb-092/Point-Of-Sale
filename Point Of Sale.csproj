@@ -1,0 +1,352 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2D18281-1FD8-411E-8715-2D8F4D32D71B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Point_Of_Sale</RootNamespace>
+    <AssemblyName>Point Of Sale</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44381</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterStyle.css" />
+    <Content Include="pictures\Employee_manegment.png" />
+    <Content Include="pictures\Home_BG.png" />
+    <Content Include="pictures\Inventory_manegment.jpg" />
+    <Content Include="pictures\login_BG.png" />
+    <Content Include="pictures\Reporting.png" />
+    <Content Include="Scripts\daily_report.js" />
+    <Content Include="Scripts\Display_Employees.js" />
+    <Content Include="Scripts\display_products.js" />
+    <Content Include="Scripts\highly_demand.js" />
+    <Content Include="Scripts\low_inventory.js" />
+    <Content Include="Scripts\monthly_report.js" />
+    <Content Include="Scripts\POS-AddNewToInventory.js" />
+    <Content Include="Scripts\POS-Add_Employee.js" />
+    <Content Include="Scripts\POS-delete_employee.js" />
+    <Content Include="Scripts\POS-delete_product.js" />
+    <Content Include="Scripts\POS-Edit_Employee.js" />
+    <Content Include="Scripts\POS-Edit_Inventory.js" />
+    <Content Include="Scripts\POS-login.js" />
+    <Content Include="Scripts\POS-ReturnSale.js" />
+    <Content Include="Scripts\POS-Sale_Managment.js" />
+    <Content Include="Scripts\yearly_report.js" />
+    <Content Include="Styles\daily_report.css" />
+    <Content Include="Styles\DisplayProduct.css" />
+    <Content Include="Styles\display_employees.css" />
+    <Content Include="Styles\highly_demand.css" />
+    <Content Include="Styles\low_inventory.css" />
+    <Content Include="Styles\monthly_report.css" />
+    <Content Include="Styles\POS-AddNewToInventory.css" />
+    <Content Include="Styles\POS-Add_Employee.css" />
+    <Content Include="Styles\POS-delete_employee.css" />
+    <Content Include="Styles\POS-delete_product.css" />
+    <Content Include="Styles\POS-Edit_Employee.css" />
+    <Content Include="Styles\POS-Edit_Inventory.css" />
+    <Content Include="Styles\POS-Employee_Manegment.css" />
+    <Content Include="Styles\POS-Home.css" />
+    <Content Include="Styles\POS-Inventory_manegment.css" />
+    <Content Include="Styles\POS-login.css" />
+    <Content Include="Styles\POS-Reporting.css" />
+    <Content Include="Styles\POS-ReturnSale.css" />
+    <Content Include="Styles\POS-Sale_Managment.css" />
+    <Content Include="Styles\POS-UserInfo.css" />
+    <Content Include="Styles\yearly_report.css" />
+    <Content Include="Web.config" />
+    <Content Include="POS-Login.aspx" />
+    <Content Include="SalesManegment.aspx" />
+    <Content Include="return.aspx" />
+    <Content Include="InventoryManegment.aspx" />
+    <Content Include="AddProduct.aspx" />
+    <Content Include="EditProduct.aspx" />
+    <Content Include="DeleteProduct.aspx" />
+    <Content Include="EmployeeManegment.aspx" />
+    <Content Include="AddEmployee.aspx" />
+    <Content Include="Edit_Employee.aspx" />
+    <Content Include="Delete_Employee.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="user.aspx" />
+    <Content Include="Reporting.aspx" />
+    <Content Include="highly_demand.aspx" />
+    <Content Include="monthly_report.aspx" />
+    <Content Include="low_inventory.aspx" />
+    <Content Include="display_products.aspx" />
+    <Content Include="Display_Employees.aspx" />
+    <Content Include="daily_report.aspx" />
+    <Content Include="yearly_report.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseMaster.Master.cs">
+      <DependentUpon>BaseMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseMaster.Master.designer.cs">
+      <DependentUpon>BaseMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\myDAL.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="POS-Master.master.cs">
+      <DependentUpon>POS-Master.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POS-Master.master.designer.cs">
+      <DependentUpon>POS-Master.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="POS-Login.aspx.cs">
+      <DependentUpon>POS-Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POS-Login.aspx.designer.cs">
+      <DependentUpon>POS-Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SalesManegment.aspx.cs">
+      <DependentUpon>SalesManegment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SalesManegment.aspx.designer.cs">
+      <DependentUpon>SalesManegment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="return.aspx.cs">
+      <DependentUpon>return.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="return.aspx.designer.cs">
+      <DependentUpon>return.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryManegment.aspx.cs">
+      <DependentUpon>InventoryManegment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryManegment.aspx.designer.cs">
+      <DependentUpon>InventoryManegment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditProduct.aspx.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProduct.aspx.designer.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteProduct.aspx.cs">
+      <DependentUpon>DeleteProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteProduct.aspx.designer.cs">
+      <DependentUpon>DeleteProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManegment.aspx.cs">
+      <DependentUpon>EmployeeManegment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeManegment.aspx.designer.cs">
+      <DependentUpon>EmployeeManegment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployee.aspx.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.aspx.designer.cs">
+      <DependentUpon>AddEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Employee.aspx.cs">
+      <DependentUpon>Edit_Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit_Employee.aspx.designer.cs">
+      <DependentUpon>Edit_Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_Employee.aspx.cs">
+      <DependentUpon>Delete_Employee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delete_Employee.aspx.designer.cs">
+      <DependentUpon>Delete_Employee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.aspx.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.aspx.designer.cs">
+      <DependentUpon>user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting.aspx.cs">
+      <DependentUpon>Reporting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting.aspx.designer.cs">
+      <DependentUpon>Reporting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="highly_demand.aspx.cs">
+      <DependentUpon>highly_demand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="highly_demand.aspx.designer.cs">
+      <DependentUpon>highly_demand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="monthly_report.aspx.cs">
+      <DependentUpon>monthly_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="monthly_report.aspx.designer.cs">
+      <DependentUpon>monthly_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="low_inventory.aspx.cs">
+      <DependentUpon>low_inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="low_inventory.aspx.designer.cs">
+      <DependentUpon>low_inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="display_products.aspx.cs">
+      <DependentUpon>display_products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="display_products.aspx.designer.cs">
+      <DependentUpon>display_products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Display_Employees.aspx.cs">
+      <DependentUpon>Display_Employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Display_Employees.aspx.designer.cs">
+      <DependentUpon>Display_Employees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="daily_report.aspx.cs">
+      <DependentUpon>daily_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="daily_report.aspx.designer.cs">
+      <DependentUpon>daily_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="yearly_report.aspx.cs">
+      <DependentUpon>yearly_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="yearly_report.aspx.designer.cs">
+      <DependentUpon>yearly_report.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BaseMaster.Master" />
+    <None Include="packages.config" />
+    <Content Include="POS-Master.master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56960</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44381/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

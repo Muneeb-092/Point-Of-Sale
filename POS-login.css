@@ -1,0 +1,86 @@
+body {
+    background-image: url('../pictures/login_BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.loginHeader {
+    text-align: center;
+}
+
+    .loginHeader h1 {
+        font-size: 60px;
+        color: rgb(207, 144, 238);
+        padding: 0;
+        margin: 0;
+    }
+
+    .loginHeader p {
+        color: white;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin: 0;
+        display: inline-block;
+    }
+
+        .loginHeader p:after {
+            content: '';
+            display: block;
+            height: 5px;
+            background: rgb(207, 144, 238);
+            width: 100%;
+            margin: 0 auto;
+        }
+
+.loginBody {
+    margin: 0 auto;
+    width: 500px;
+    background: rgba(192, 158, 251, 0.5);
+    padding: 50px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.loginInputsContainer label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.loginInputsContainer input {
+    height: 25px;
+    width: 100%;
+    border: 2px solid rgb(207, 144, 238);
+    padding: 5px;
+    text-align: left;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.logintbn {
+    text-align: center;
+    padding: 6px 15px;
+    margin-left: 443px;
+    margin-top: 6px;
+    border-radius: 7px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+    .logintbn:hover {
+        background-color: rgb(57, 27, 87);
+        color: white;
+        cursor: pointer;
+        padding: 7px 16px;
+    }
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(246 227 255);
+}

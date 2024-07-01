@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('../pictures/Home_BG.png');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 50px;
+    font-style: oblique;
+    font-stretch: expanded;
+    font-weight: 850;
+    position: static;
+}
+
+
+
+nav.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav.main-nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 60px;
+}
+
+nav.main-nav ul li a {
+  
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 18px;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav.main-nav ul li:nth-child(1) a {
+    background-color: #ffcc00; /* Sales Management */
+}
+
+nav.main-nav ul li:nth-child(2) a {
+    background-color: #ff6666; /* Inventory Management */
+}
+
+nav.main-nav ul li:nth-child(3) a {
+    background-color: #66ccff; /* Employee Management */
+}
+
+nav.main-nav ul li:nth-child(4) a {
+    background-color: #99ff99; /* Reports */
+}
+
+nav.main-nav ul li:nth-child(5) a {
+    background-color: #ff99cc; /* About */
+}
+
+nav.main-nav ul li a:hover {
+    background-color: #555;
+}
+
+
+.main-content {
+    
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #461381;
+    padding-top: 5px;
+    margin-top: 73px;
+}
+
+.main-content h2 {
+    color: #f0f1f5;
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.main-content p {
+    color: #71528d;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+
+}

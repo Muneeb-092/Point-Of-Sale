@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/BaseMaster.Master" AutoEventWireup="true" CodeBehind="POS-Master.master.cs" Inherits="Point_Of_Sale.POS_Master1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head1" runat="server">
+    <title>Point Of Sale</title>
+    <link href="MasterStyle.css" rel="stylesheet" type="text/css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlace1" runat="server">
+     
+        
+            <div class="header">
+                <h1>Point Of Sale</h1>
+                <nav>
+                    <ul>
+                        <li><a href="Home.aspx">Home</a></li>
+                        <li><a href="SalesManegment.aspx">Sale Management</a></li>
+                        <li><a href="InventoryManegment.aspx">Inventory Management</a></li>
+                        <li><a href="EmployeeManegment.aspx">Employee Management</a></li>
+                        <li><a href="Reporting.aspx">Reports</a></li>
+                        <li><a href="user.aspx">User Info</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="content">
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                </div>
+            </div>
+      
+    
+</asp:Content>
